@@ -1,13 +1,13 @@
-# Introduction to python Fall 2020
+# Introduction to python Spring 2021
 
 ## Elective at KEA CS 4th semester.
 
-**View Online:** https://python-elective-kea.github.io/fall2020/
+**View Online:** https://python-elective-kea.github.io/spring2021/
 
 Or **view local** by cloning this repository
 
 ````
-  git clone https://github.com/python-elective-kea/fall2020.git
+  git clone https://github.com/python-elective-kea/spring2021.git
 
 ````
 Open the index.html page in the "sphinx -> build" folder and use the website.
