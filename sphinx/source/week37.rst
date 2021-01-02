@@ -1,0 +1,166 @@
+Week 37 - List comprehensions, Modules
+======================================
+
+Today we will start by looking at listcomprehensions. After that we will look at modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules. Next week we cary on with 3rd party modules (code made by someone else in the world), and you will learn how to incorporate these in your own code, and learn how to make sure how every body else that will use your code will have access to the same 3. party modules as you and to the right version of this. . 
+
+You will on the practical level today, besides comprehensions, work with 4 modules:
+
+* Os module
+* Subprocesses module
+* zipfile module
+* Requests module
+
+Learning goals
+--------------
+After this week you will be able to:
+       
+        - Use List comprehensions instead of list assignment and loops in you python code.
+        - Create your own modules.
+        - Use python build in modules.
+        - Find and use 3rd party modules.
+        - Use the requests module to fetch website data.
+        - search a document for patterns.   
+
+Materials
+---------
+* `Comprehending Python’s Comprehensions <https://dbader.org/blog/list-dict-set-comprehensions-in-python>`_
+* `Python Modules and Packages <https://realpython.com/python-modules-packages/>`_
+* `Working With Files in Python <https://realpython.com/working-with-files-in-python/#making-directories>`_
+* `Subprocess management <https://docs.python.org/3.7/library/subprocess.html#module-subprocess>`_
+* `How to Build Command Line Interfaces in Python With argparse <https://realpython.com/command-line-interfaces-python-argparse/>`_
+* `Python’s Requests Library <https://realpython.com/python-requests/>`_
+* `Downloading Files from URLs in Python <https://www.codementor.io/aviaryan/downloading-files-from-urls-in-python-77q3bs0un>`_ 
+* `Slides <_static/Notes-Contextmanager-ListComp-modules.slides.html>`_  (`Notebook <notebooks/Notes-Contextmanager-ListComp-modules.ipynb>`_ )
+* `Code examples from today <https://github.com/python-elective-kea/fall2020-code-examples-from-teachings/tree/master/w37>`_
+
+Exercises
+---------
+
+**List Comprehensions**
+
+----------------------------------
+Ex 1: Alphabet List Comprehensions
+----------------------------------
+`Solution <exercises/solution/03_os_sub_req/solutions#ex-1-alphabet-list-comprehensions>`_
+
+1. Create a list of capital letters in the english alphabet
+2. Create a list of capital letter from the english aplhabet, but exclude 4 with the Unicode code point of either 70, 75, 80, 85.
+3. Create a list of capital letter from from the english aplhabet, but exclude every second between F & O
+
+--------------------------------
+Ex 2: Clothes List Comprehension
+--------------------------------
+
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-2-clothes-list-comprehension>`_
+
+1. From 2 lists, using a list comprehension, create a list containing:
+
+
+        [('Black', 's'),
+        ('Black', 'm'),
+        ('Black', 'l'),
+        ('Black', 'xl'),
+        ('White', 's'),
+        ('White', 'm'),
+        ('White', 'l'),
+        ('White', 'xl')]
+
+
+.. code::
+   :linenos:
+
+        colors = ['Black', 'White']
+        sizes = ['s', 'm', 'l', 'xl']
+
+2. If the tuple pair is in the following list, it should not be added to the comprehension generated list. 
+
+.. code::
+   :linenos:
+
+        soled_out = [('Black', 'm'), ('White', 's')]
+
+
+-----------------
+Ex 2: Sort a Text
+-----------------
+
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-2-sort-a-text>`_
+
+Based on this exercise from last time sort it by using a list comprehensions instead. 
+
+.. literalinclude:: exercises/solution/02_lists/sort_a_string.py
+        :linenos:
+
+----------------------------
+Ex 3: List & tuple exercises
+----------------------------
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-3-list-tuple-exercises>`_
+
+Based on these exercises from last time, solve the exercises by using list comprehensions instead. 
+
+* `List & tuple exercises <exercises/lists/lists.rst>`_
+
+  
+  
+**Modules**
+
+-------------------------
+Ex 4: Sys module exercise
+-------------------------
+
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-4-sys-module-exercise>`_
+
+Create a commandline tool that checks if the required aguments are present when you run the program, and if not tells you what is missing to run the program.
+
+If you run python :code:`python script.py` the program should print an error saying :code:`Usage: python script.py [-it]{--rm}` where the **[]** means required and the **{}** means optional.
+
+------------------------
+Ex 5: OS Module exercise
+------------------------
+
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-5-os-module-exercise>`_
+
+.. literalinclude:: exercises/util_modules/os_exercise.py
+        :linenos:
+
+
+-----------------------
+Ex 6: Extract .py files
+-----------------------
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-6-extract-py-files>`_
+
+Create a commandline utillity (program) that when run takes 1-3 commandline arguments where:
+
+| * the first is the name of a directory in play
+| * the second (optional) is a --flag (--todir <dirname>) that specifies where the files in that directory should be copied to.
+| * the third (optional) is a --flag (--zip <filename>) that specifies if the files should be zipped and what the zip file should be called.
+
+So if you run the program like this :code:`python extract.py . --todir /tmp/ --zip archive.zip` you should copy all files in the current directory (.) to a new tmp directory and the .py files should be put in a zip folder names archive.zip.
+
+
+Task A:
+*******
+Copy all .py files in a given directory to a new folder.
+
+Task B:
+*******
+Zip all .py files in a given directory and put the zip file in the specified folder.
+
+----------------------------------
+Ex 7: Simple scraber with requests
+----------------------------------
+
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-7-simple-scraber-with-requests>`_
+
+| 1. Create an application that asks for an url. 
+| 2. Then Download that html page, and its images, icons etc. and change it so it will work locally on your computer. Locally means that you should be able to cut your internet connection and still have a functionig html page. 
+| 3. When done push all files to you github account. (you are allowed to manualy create an online repo and feed the clone url to your program. but the rest should be done through python).
+
+| You will have to use the requests module, the OS module and the subprocesses module for this taks.
+
+------
+quizes
+------
+* `HTTP Requests With the "requests" Library Quiz <https://realpython.com/quizzes/python-requests/>`_
+
+

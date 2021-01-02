@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Week 49 - Python tips &amp; Tricks &mdash; Introduction to python 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Week 50 - Recap &amp; Exam preperation" href="week50.html" />
+    <link rel="prev" title="Week 48 - Problem-Solving with python" href="week48.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this elective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exam.html">Exam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Commandline Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week35.html">Week 35 - Introduction to python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week36.html">Week 36 - Data Structures: Sequences &amp; comprehensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week37.html">Week 37 - List comprehensions, Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week38.html">Week 38 - Utilities and Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week39.html">Week 39 - OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week40.html">Week 40 - Encapsulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week41.html">Week 41 - The python datamodel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week42.html">Week 42 - Mandatory assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week45.html">Week 45 - Functions &amp;  Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week46.html">Week 46 - Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week47.html">Week 47 - Context Managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week48.html">Week 48 - Problem-Solving with python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Week 49 - Python tips &amp; Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex-1-menu-and-dictionaries">Ex 1: Menu and dictionaries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-2-serve-a-flask-website-on-local-network">Ex 2: Serve a Flask website on local network</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="week50.html">Week 50 - Recap &amp; Exam preperation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introduction to python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Week 49 - Python tips &amp; Tricks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/python-elective-kea/fall2020/blob/master/sphinx/source/week49.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="week-49-python-tips-tricks">
+<h1>Week 49 - Python tips &amp; Tricks<a class="headerlink" href="#week-49-python-tips-tricks" title="Permalink to this headline">¶</a></h1>
+<p>Todays topic are actually topics. We will cover a lot of small usefull python features that for most cases can speed up the development time.</p>
+<div class="section" id="learning-goals">
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline">¶</a></h2>
+<p>After this week you will be able to:</p>
+<ul class="simple">
+<li><p>Understand pythons contextlib functionallity</p></li>
+<li><p>Turn a docker container into a webserver on a local network.</p></li>
+</ul>
+</div>
+<div class="section" id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="notebooks/Tips_Tricks.html"><span class="doc">Notebook on Tips &amp; Tricks</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ex-1-menu-and-dictionaries">
+<h3>Ex 1: Menu and dictionaries<a class="headerlink" href="#ex-1-menu-and-dictionaries" title="Permalink to this headline">¶</a></h3>
+<p>In the module below, you should create a register dictionary that has the name of each function as a key and the function itself as a value.</p>
+<p>{‘home’ : home, ‘about’ : about}</p>
+<p>The register should always corospond to the functions that are in the file.</p>
+<p>It would be a good idea to use a decorator for this task. (but be aware that it might be a bit more simple than the decorators we worked with 2 weeks ago)</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">register</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
+     <span class="k">return</span> <span class="s1">&#39;I am the Home page&#39;</span>
+<span class="k">def</span> <span class="nf">about</span><span class="p">():</span>
+     <span class="k">return</span> <span class="s1">&#39;I am the About page&#39;</span>
+<span class="k">def</span> <span class="nf">contact</span><span class="p">():</span>
+     <span class="k">return</span> <span class="s1">&#39;I am the Contact page&#39;</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="arabic simple" start="2">
+<li><p>You should simulate a website menu that in a loop asks you what page you want to see and gives you the return value of the functions.</p></li>
+<li><p>Add a menu point called exit. This element should exit the loop.</p></li>
+</ol>
+</div>
+<div class="section" id="ex-2-serve-a-flask-website-on-local-network">
+<h3>Ex 2: Serve a Flask website on local network<a class="headerlink" href="#ex-2-serve-a-flask-website-on-local-network" title="Permalink to this headline">¶</a></h3>
+<p>Based on this app.py file:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s1">&#39;Hello, World!&#39;</span>
+</pre></div>
+</td></tr></table></div>
+<p>Create a docker container that runs and serves the website on a local network. (You should be able to see the website in your phones browser)</p>
+<p>You can read more about Flask in this <a class="reference external" href="https://flask.palletsprojects.com/en/1.1.x/quickstart/">Quickstart Guide</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="week50.html" class="btn btn-neutral float-right" title="Week 50 - Recap &amp; Exam preperation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="week48.html" class="btn btn-neutral float-left" title="Week 48 - Problem-Solving with python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Claus Bove
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

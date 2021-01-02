@@ -1,0 +1,591 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docker, dockerfile &amp; requirements.txt &mdash; Introduction to python 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About this elective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exam.html">Exam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheatsheet.html">Commandline Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week35.html">Week 35 - Introduction to python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week36.html">Week 36 - Data Structures: Sequences &amp; comprehensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week37.html">Week 37 - List comprehensions, Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week38.html">Week 38 - Utilities and Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week39.html">Week 39 - OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week40.html">Week 40 - Encapsulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week41.html">Week 41 - The python datamodel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week42.html">Week 42 - Mandatory assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week45.html">Week 45 - Functions &amp;  Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week46.html">Week 46 - Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week47.html">Week 47 - Context Managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week48.html">Week 48 - Problem-Solving with python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week49.html">Week 49 - Python tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week50.html">Week 50 - Recap &amp; Exam preperation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Introduction to python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Docker, dockerfile &amp; requirements.txt</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/python-elective-kea/fall2020/blob/master/sphinx/source/notebooks/notes_docker_requirements_webscrabing.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Docker,-dockerfile-&amp;-requirements.txt">
+<h1>Docker, dockerfile &amp; requirements.txt<a class="headerlink" href="#Docker,-dockerfile-&-requirements.txt" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip list</span>
+<span class="n">Package</span>    <span class="n">Version</span>
+<span class="o">----------</span> <span class="o">-------</span>
+<span class="n">pip</span>        <span class="mf">20.1</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">setuptools</span> <span class="mf">46.4</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">wheel</span>      <span class="mf">0.34</span><span class="o">.</span><span class="mi">2</span>
+
+<span class="c1"># pip install requests</span>
+
+<span class="c1"># pip list</span>
+<span class="n">Package</span>    <span class="n">Version</span>
+<span class="o">----------</span> <span class="o">---------</span>
+<span class="n">certifi</span>    <span class="mf">2020.6</span><span class="o">.</span><span class="mi">20</span>
+<span class="n">chardet</span>    <span class="mf">3.0</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">idna</span>       <span class="mf">2.10</span>
+<span class="n">pip</span>        <span class="mf">20.1</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">requests</span>   <span class="mf">2.24</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">setuptools</span> <span class="mf">46.4</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">urllib3</span>    <span class="mf">1.25</span><span class="o">.</span><span class="mi">10</span>
+<span class="n">wheel</span>      <span class="mf">0.34</span><span class="o">.</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="section" id="requirements.txt">
+<h2>requirements.txt<a class="headerlink" href="#requirements.txt" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">certifi</span><span class="o">==</span><span class="mf">2020.6</span><span class="o">.</span><span class="mi">20</span>
+<span class="n">chardet</span><span class="o">==</span><span class="mf">3.0</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">idna</span><span class="o">==</span><span class="mf">2.10</span>
+<span class="n">requests</span><span class="o">==</span><span class="mf">2.24</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">urllib3</span><span class="o">==</span><span class="mf">1.25</span><span class="o">.</span><span class="mi">10</span>
+</pre></div>
+</div>
+<p>Install the listed modules in reuirements.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip install -r requirements.txt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Generate-a-requirements.txt-from-your-container">
+<h2>Generate a requirements.txt from your container<a class="headerlink" href="#Generate-a-requirements.txt-from-your-container" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip freeze &gt; requirements.txt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Docker-Image-&amp;-requirements.txt">
+<h1>Docker Image &amp; requirements.txt<a class="headerlink" href="#Docker-Image-&-requirements.txt" title="Permalink to this headline">¶</a></h1>
+<p>You can create your own dockerfile and in this include the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">Dockerfile</span><span class="o">**</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># the base image</span>
+<span class="n">FROM</span> <span class="n">python</span><span class="p">:</span><span class="mf">3.8</span><span class="o">-</span><span class="n">alpine</span>
+
+<span class="c1"># copy all files from dir with Dockerfile and requirements.txt to /app folder in image</span>
+<span class="n">COPY</span> <span class="o">.</span> <span class="o">/</span><span class="n">app</span>
+
+<span class="c1"># cd into /app folder with (in this case only) the requirements.txt</span>
+<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">app</span>
+
+<span class="c1"># install python modules</span>
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1"># Change into / as startingpoint of container</span>
+<span class="n">WORKDIR</span> <span class="o">/</span>
+
+<span class="c1"># when container runs it should start in a ash terminal</span>
+<span class="n">CMD</span> <span class="p">[</span><span class="s2">&quot;ash&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Github,-Dockerfile-&amp;-requirements.txt">
+<h1>Github, Dockerfile &amp; requirements.txt<a class="headerlink" href="#Github,-Dockerfile-&-requirements.txt" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├── .gitignore
+├── Dockerfile
+├── modules
+│   ├── bar.py
+│   ├── foo.py
+│   └── util.py
+├── requirements.txt
+└── script.py
+</pre></div>
+</div>
+<div class="section" id="Ex-1:-Clone,-build-and-run">
+<h2>Ex 1: Clone, build and run<a class="headerlink" href="#Ex-1:-Clone,-build-and-run" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Clone this repository:</p>
+<ul>
+<li><p>git clone <a class="reference external" href="https://github.com/python-elective-kea/clbo-alpine-dev-env.git">https://github.com/python-elective-kea/clbo-alpine-dev-env.git</a></p></li>
+</ul>
+</li>
+<li><p>Build an Image based on the repositorys Dockerfile.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span> <span class="pre">--tag</span> <span class="pre">clbo/python</span></code></p></li>
+</ul>
+</li>
+<li><p>Run a container based on this image</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">--rm</span> <span class="pre">-v</span> <span class="pre">${PWD}:/docs</span> <span class="pre">clbo/python</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Claus Bove
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
