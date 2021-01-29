@@ -1,30 +1,22 @@
 Session 3 - Mandatory assignment
 ================================
 
-Todays lectures will be used for your first mandatory assignment. The assignment is an individual i online assignment and you can do it from home or at the school.
+Todays lectures will be used for your first mandatory assignment. The assignment is an individual assignment, but you are welcome to work together in solving this. Everybody should hand in individualy though. 
 
-Start time: 12:15
-End Time: 15:30
+Python Class A:
+Start time: Tuesday 8:30
+End Time: Tuesday 11:45
+Peer Review: Latest Wednessday 12:00 (tomorrow)
+`Assignment on fronter <>`_
 
-Peer review 15:30 (thursday 15th) - 15:30 (friday 16th) 
-(Peer review means that you will have to review on of your fellow students assignment and give feddback. The assignment you should review will be randomly chosen by "Fronter", and you will recieve an email with a link to the assignment you should review. This is part of your mandatory assignment and you will have to do this in order to pass the mandatory assignment.)
+Python Class B:
+Start time: Tuesday 12:30
+End Time: Tuesday 15:45
+Peer Review: Latest Wednessday 12:00 (tomorrow)
+`Assignment on fronter <>`_
 
 The final evaluation of your assignment will be done by Claus and will be either a passed or not passed evaluation. 
 
-`The assignment can be found on Fronter <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=782819>`_ 
+** Peer review means that you will have to review on of your fellow students assignment and give feddback. The assignment you should review will be randomly chosen by "Fronter", and you will recieve an email with a link to the assignment you should review. This is part of your mandatory assignment and you will have to do this in order to pass the mandatory assignment.)
 
 
-
-..        Exercises
-        ---------
-        * `Count words on webpage <>`_
-        * `Lotto exercise <> `_
-        
-        --------------------
-        Ex 1: Unique letters
-        --------------------
-
-        1. Create a function that takes a string as parameter and returns a tuple.
-        2. The function should remove all vowels in the string, all dublicate consonants and should sort the rest in alphabetic order. 
-        3. return a tuple of the unique chars in alphabetic order.
-    
