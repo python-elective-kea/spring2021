@@ -26,10 +26,7 @@ Some weeks before the oral examination you should hand in a synopsis on wiseflow
 Oral exam:
 **********
 
-
-
-* Same as 3rd semester SWC
-* 4 topics, where you pick a topic at the beginning of the examination.  
+* 4 - 6 topics, where you pick a topic at the beginning of the examination.  
 * Create a 10 minutes presentation and code examples for each topic.
 * After your presentation 15 minutes examination within this topic and other related topics.
 
@@ -40,10 +37,13 @@ Exam Topics
 At your exam you should demonstrate to wich extend you fullfill the learning goals of this elective. 
 This you should do through demonstrating your knowlege, skills and competencies within these topics. 
 
-* Data Structures & functions
-* Pythonic OOP
-* Generators, Decorators & Context Managers
-* Python modules and the python development environment.
+Topics will be listed here later this semester.
+
+... 
+        * Data Structures & functions
+        * Pythonic OOP
+        * Generators, Decorators & Context Managers
+        * Python modules and the python development environment.
 
 You can get inspiration about what to talk about within each topic in your presentation `here <notebooks/exam_synopsis_template.md>`_.
 

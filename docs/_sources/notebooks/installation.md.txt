@@ -1,6 +1,9 @@
 # Installations
-This document will describe what you should install in order to follow this elective. 
-You will not install python dirrectly on your computer, but instead throughout this semester run docker containers build opon different kinds of python images.
+This document will describe what you should install in order to follow this elective.   
+
+You will not install python dirrectly on your computer, but instead throughout this semester run docker containers build opon different kinds of python images.    
+
+The benifit of this appcoach is that we all, no matter what OS we normally use, can use the exact same development enviroment. This also makes it easier to work together across diffenret OS in groups. It also will teach you how to work with an industry standart, so you know this development environment and approach when you start to work after your education has ended.  
 
 You probably already have installed some of the following applications, but if you do not you should now install:
 

@@ -18,17 +18,19 @@ Underneath you can see a content overview about this site, and you will by follo
    about
    exam
    cheatsheet
-   week35
-   week36
-   week37
-   week38
-   week39
-   week40
-   week41
-   week42
-   week45
-   week46
-   week47
-   week48
-   week49
-   week50
+   ses1
+   ses2 
+   ses3
+   ses4
+   ses5
+   ses6
+   ses7
+   ses8
+   ses9
+   ses10
+   ses11
+   ses12
+   ses13
+   ses14
+   ses15
+   ses16

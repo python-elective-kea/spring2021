@@ -26,25 +26,24 @@ Course Workload
 Sessions Workflow
 -----------------
 
-| 12:15 - 12:45 : Feedback on the exercises from last week    
-| 12:45 - 13:15 : New stuff & Small exercises (ping pong)    
-| 13:15 - 13:30 : Break    
-| 13:30 - 15:00 : New stuff & Small exercises (ping pong)    
-| 15:00 - 15:30 : Recap and what to do until next time talk.    
+..      | 12:15 - 12:45 : Feedback on the exercises from last week    
+        | 12:45 - 13:15 : New stuff & Small exercises (ping pong)    
+        | 13:15 - 13:30 : Break    
+        | 13:30 - 15:00 : New stuff & Small exercises (ping pong)    
+        | 15:00 - 15:30 : Recap and what to do until next time talk.    
 
 
-Online / Physical Teachings
----------------------------
-In this semster we will have both physical teaching sessions and online teaching sessions. 
-The rule is that the **normal is Physical**.
-You will be informed when the sessions will be online. 
+Online Teachings
+----------------
+In this semster we will (probably) only have online teaching sessions. 
+You will be informed if this will change. 
 
-Online teachings will always be on **Teams** in the team: `Introduction to python (Fall 2020) <https://teams.microsoft.com/l/team/19%3a193897e03bd94e108dd06ec0b96fae45%40thread.tacv2/conversations?groupId=2447ae3d-f23e-40be-aed5-07efa12b18a6&tenantId=d10c3c6e-c228-4944-8b6a-6067c6afe3c9>`_.
+Online teachings will always be on **Teams**.
 
 
 Software Needed for the Course
 ------------------------------
-* Terminal / Powershell
+* A CLI (Terminal, Powershell, Gitbash e.g)
 * Git
 * Docker 
 * A text editor or IDE

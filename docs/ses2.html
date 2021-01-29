@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Session 2 - Data Structures: List &amp; Tuples &mdash; Introduction to python 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Session 3 - Mandatory assignment" href="ses3.html" />
+    <link rel="prev" title="Session 1 - Introduction to python" href="ses1.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this elective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exam.html">Exam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Commandline Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses1.html">Session 1 - Introduction to python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Session 2 - Data Structures: List &amp; Tuples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex-1-build-in-functions-on-lists">Ex 1: Build in functions on lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-2-sort-a-text">Ex 2: Sort a Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-3-sort-a-list">Ex 3: Sort a list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-4-files">Ex 4: Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-5-sort-a-list-of-tuples">Ex 5: Sort a list of tuples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-tuples-exercises">List &amp; Tuples exercises</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quizes">quizes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ses3.html">Session 3 - Mandatory assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses4.html">Session 4 - List comprehensions, Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses5.html">Session 5 - Utilities and Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses6.html">Session 6 - OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses7.html">Session 7 - Encapsulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses8.html">Session 8 - The python datamodel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses9.html">Session 9 - Functions &amp;  Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses10.html">Session 10 - Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses11.html">Session 11 - Context Managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses12.html">Session 12 - Dataclasses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses13.html">Session 13 - Meta Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses14.html">Session 14 - The NumPy Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses15.html">Session 15 - Recap &amp; Exam preperation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses16.html">Session 16 - Recap &amp; Exam preperation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introduction to python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Session 2 - Data Structures: List &amp; Tuples</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/python-elective-kea/fall2020/blob/master/sphinx/source/ses2.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="session-2-data-structures-list-tuples">
+<h1>Session 2 - Data Structures: List &amp; Tuples<a class="headerlink" href="#session-2-data-structures-list-tuples" title="Permalink to this headline">¶</a></h1>
+<p>Today we will work with data structures in python. You will by the end of these sessions be able to use Lists and Tuples, read and Write to Files and work with the for and while loop.</p>
+<div class="section" id="learning-goals">
+<h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline">¶</a></h2>
+<p>After this week you will be able to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Work with lists, tuples</p></li>
+<li><p>Loop over sequences with a for, foreach &amp; while loops.</p></li>
+<li><p>Sort sequences using the build in sorted function and use its key parameter to perform custom sorting.</p></li>
+<li><p>Read from files and write to files using the build in “open” function.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/python-lists-tuples/">Lists and Tuples in Python</a></p></li>
+<li><p><a class="reference external" href="https://www.datacamp.com/community/tutorials/python-tuples">Tuples in Python</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-for-loop/">Python “for” Loops</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-while-loop/">Python “while” Loops</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-sort/">How to Use sorted() and sort() in Python</a></p></li>
+<li><p><a class="reference external" href="_static/noterlists_tuples.slides.html">Slides</a>    (<a class="reference internal" href="notebooks/noterlists_tuples.html"><span class="doc">notebook</span></a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/python-elective-kea/fall2020-code-examples-from-teachings/tree/master/w36">Code examples from teachings</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=ohr6O78jGzs">How to Learn Python in Five Minutes</a></p></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ohr6O78jGzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ex-1-build-in-functions-on-lists">
+<h3>Ex 1: Build in functions on lists<a class="headerlink" href="#ex-1-build-in-functions-on-lists" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Look at this list of pythons <a class="reference external" href="https://docs.python.org/3/library/functions.html">build in functions</a>.</div>
+<div class="line">Try all of these in the interpretor (on a list you create). e.g  <code class="code docutils literal notranslate"><span class="pre">len(a)</span></code></div>
+<div class="line">Not all will work on lists, but try it out and see what works.</div>
+</div>
+</div>
+<div class="section" id="ex-2-sort-a-text">
+<h3>Ex 2: Sort a Text<a class="headerlink" href="#ex-2-sort-a-text" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="exercises/solution/02_lists/sorted_exercises.html"><span class="doc">Solution</span></a></p>
+<ol class="arabic simple">
+<li><p>Create a function that takes a string as a parameter and returns a list.</p></li>
+<li><p>The function should remove all vowels and sort the consonants in alphabetic order, and the return the result.</p></li>
+</ol>
+</div>
+<div class="section" id="ex-3-sort-a-list">
+<h3>Ex 3: Sort a list<a class="headerlink" href="#ex-3-sort-a-list" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="exercises/solution/02_lists/sorted_exercises.html"><span class="doc">Solution</span></a></p>
+<ol class="arabic simple">
+<li><p>Create a list of strings with names in it. (l = [‘Claus’, ‘Ib’, ‘Per’])</p></li>
+<li><p>Sort this list by using the sorted() build in function.</p></li>
+<li><p>Sort the list in reversed order.</p></li>
+<li><p>Sort the list on the lenght of the name.</p></li>
+<li><p>Sort the list based on the last letter in the name.</p></li>
+<li><p>Sort the list with the names where the letter ‘a’ is in the name first.</p></li>
+</ol>
+</div>
+<div class="section" id="ex-4-files">
+<h3>Ex 4: Files<a class="headerlink" href="#ex-4-files" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="exercises/solution/02_lists/sorted_exercises.html"><span class="doc">Solution</span></a></p>
+<ol class="arabic simple">
+<li><p>Create a file and call it lyrics.txt (it does not need to have any content)</p></li>
+<li><p>Create a new file and call it songs.docx and in this file write 3 lines of text to it.</p></li>
+<li><p>open and read the content and write it to your terminal window.
+* you should use both the read(), readline(), and readlines() methods for this. (so 3 times the same output).</p></li>
+</ol>
+</div>
+<div class="section" id="ex-5-sort-a-list-of-tuples">
+<h3>Ex 5: Sort a list of tuples<a class="headerlink" href="#ex-5-sort-a-list-of-tuples" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="exercises/solution/02_lists/sorted_exercises.html"><span class="doc">Solution</span></a></p>
+<p>1. Based on this list of tuples:
+<code class="code docutils literal notranslate"><span class="pre">[(1,2),(2,2),(3,2),(2,1),(2,2),(1,5),</span> <span class="pre">(10,4),</span> <span class="pre">(10,</span> <span class="pre">1),</span> <span class="pre">(3,</span> <span class="pre">1)]</span></code></p>
+<p>2. Sort the list so the result looks like this:
+<code class="code docutils literal notranslate"><span class="pre">[(1,</span> <span class="pre">2),</span> <span class="pre">(1,</span> <span class="pre">5),</span> <span class="pre">(2,</span> <span class="pre">1),</span> <span class="pre">(2,</span> <span class="pre">2),</span> <span class="pre">(2,</span> <span class="pre">2),</span> <span class="pre">(3,</span> <span class="pre">1),</span> <span class="pre">(3,</span> <span class="pre">2),</span> <span class="pre">(10,</span> <span class="pre">1),</span> <span class="pre">(10,</span> <span class="pre">4)]</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is first sorted by the first element in the tuple and the the second element in the tuple.</p>
+</div>
+</div>
+<div class="section" id="list-tuples-exercises">
+<h3>List &amp; Tuples exercises<a class="headerlink" href="#list-tuples-exercises" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="exercises/solution/02_lists/sorted_exercises.html"><span class="doc">Solution</span></a></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="exercises/lists/lists.html"><span class="doc">List &amp; tuple exercises</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="quizes">
+<h3>quizes<a class="headerlink" href="#quizes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-lists-tuples/">Lists and Tuples Quiz</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-while-loop/">“while” Loops Quiz</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ses3.html" class="btn btn-neutral float-right" title="Session 3 - Mandatory assignment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ses1.html" class="btn btn-neutral float-left" title="Session 1 - Introduction to python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Claus Bove
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
