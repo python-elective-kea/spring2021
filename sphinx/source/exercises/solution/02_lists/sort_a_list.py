@@ -21,7 +21,7 @@ sorted(names, key=last)
 #  Sort the list with the names where the letter ‘a’ is in the name first.
 def a_in(s):
     if 'a' in s.lower():
-        return false
-    return true
+        return True
+    return False
 
 sorted(names, key=a_in)

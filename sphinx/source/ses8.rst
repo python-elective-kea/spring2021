@@ -24,11 +24,7 @@ Materials
 
 * `A Guide to Python's Magic Methods <https://rszalski.github.io/magicmethods/>`_
 * `Notebook on Datamodel <notebooks/OOP_Encapsulation_Propeties.ipynb#Datamodel>`_
-
-----------------------------
-Code examples from teachings
-----------------------------
-
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses8>`_
 
 Exercises
 ---------

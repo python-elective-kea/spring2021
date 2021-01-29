@@ -1,8 +1,6 @@
 Session 1 - Introduction to python
 ==================================
 
-*Week 5, Thursday 4/2*
-
 This first week of this elective will be used for introducing this elective and making sure that you all have the software needed to follow along.
 
 The first part of today will be an "overview" and "installation" day. We need to be on the same level before we start. You will furthermore get an introduction to the unix filesystem and commandline and you will have exercises in controling your computer through the commandline.  
@@ -27,19 +25,7 @@ Materials
 * `Strings and Character Data in Python <https://realpython.com/python-strings/>`_
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_
 * `Docker Commands from today <cheatsheet.rst#week-35-introduction-to-python>`_
-
-----------------------------
-Code examples from teachings
-----------------------------
-
-This is the code we did in the Interpretor:
-
-.. literalinclude:: code/week35/interpretor.py
-
-This is the **script.py** file:
-
-.. literalinclude:: code/week35/script.py
-        :linenos:
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses1>`_
 
 Exercises
 ---------

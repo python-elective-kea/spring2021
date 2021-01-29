@@ -24,7 +24,7 @@ Materials
 * `Pickle notebook <notebooks/Pickle-Pythonobjectserialization.ipynb>`_
 * `CSV notebook <notebooks/csv.ipynb>`_
 * `Sqlite notebook <notebooks/Sqlite.ipynb>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/fall2020-code-examples-from-teachings/tree/master/w47>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses11>`_
 
 Exercises
 ---------

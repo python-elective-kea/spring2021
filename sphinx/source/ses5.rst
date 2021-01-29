@@ -20,7 +20,7 @@ Materials
 * `Beautiful Soup Documentation <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
 * `Html to markdown <notebooks/html_markdown.rst>`_
 * `Docker Commands <cheatsheet.rst#week-38-utilities-and-modules>`_
-* `Code examples from today <https://github.com/python-elective-kea/fall2020-code-examples-from-teachings/tree/master/w38>`_
+* `Code examples from today <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses5>`_
 
 Exercises
 ---------

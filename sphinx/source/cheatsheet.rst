@@ -5,9 +5,9 @@ In this cheatsheet you will find important and hard to remember terminal command
 Docker Commands
 ---------------
 
---------------------------------
-Week 35 - Introduction to python 
---------------------------------
+---------------------------------
+Session 1 - Introduction to python 
+---------------------------------
 
 .. code::
    
@@ -16,35 +16,24 @@ Week 35 - Introduction to python
    $ docker run -it --rm -v ${PWD}:/docs python bash  // same as above, but now sharing files from the current directory to/from /docs folder in the container.
  
 
--------------------------------
-Week 38 - Utilities and Modules
--------------------------------
-
+---------------------------------
+Session 5 - Utilities and Modules
+---------------------------------
 
 .. code::
 
         $ docker build --tag webscrabing:latest .
         $ docker run -it --rm -v ${PWD}:/docs webscrabing 
 
---------------------------------
-Week 44 - Functions & Decorators
---------------------------------
+----------------------------------
+Session 9 - Functions & Decorators
+----------------------------------
 
 .. code::
 
         $ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/work jupyter/datascience-notebook 
 
 
---------------------
-Week 49 - TensorFlow
---------------------
-
-.. code::
-
-        $ docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-jupyter 
-
-        
-        
 ---------------
 Sphinx commands
 ---------------

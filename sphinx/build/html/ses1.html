@@ -91,10 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Commandline Cheatsheet</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Session 1 - Introduction to python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#code-examples-from-teachings">Code examples from teachings</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#quizes">Quizes</a></li>
 </ul>
@@ -209,7 +206,6 @@
 </style>
 <div class="section" id="session-1-introduction-to-python">
 <h1>Session 1 - Introduction to python<a class="headerlink" href="#session-1-introduction-to-python" title="Permalink to this headline">¶</a></h1>
-<p><em>Week 5, Thursday 4/2</em></p>
 <p>This first week of this elective will be used for introducing this elective and making sure that you all have the software needed to follow along.</p>
 <p>The first part of today will be an “overview” and “installation” day. We need to be on the same level before we start. You will furthermore get an introduction to the unix filesystem and commandline and you will have exercises in controling your computer through the commandline.</p>
 <p>In the second part you will get an overview of the python language and you will start to get familiar with the language and the development enviroment. We will focus this first lesson on strings and string manipulations.</p>
@@ -233,41 +229,9 @@
 <li><p><a class="reference external" href="https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html">Is Python interpreted or compiled? Yes.</a></p></li>
 <li><p><a class="reference external" href="https://realpython.com/python-strings/">Strings and Character Data in Python</a></p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/tutorial/controlflow.html#if-statements">if Statements</a></p></li>
-<li><p><a class="reference internal" href="cheatsheet.html#week-35-introduction-to-python"><span class="std std-ref">Docker Commands from today</span></a></p></li>
+<li><p>Docker Commands from today</p></li>
+<li><p><a class="reference external" href="https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses1">Code examples from teachings</a></p></li>
 </ul>
-<div class="section" id="code-examples-from-teachings">
-<h3>Code examples from teachings<a class="headerlink" href="#code-examples-from-teachings" title="Permalink to this headline">¶</a></h3>
-<p>This is the code we did in the Interpretor:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.7</span><span class="o">.</span><span class="mi">7</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Mar</span> <span class="mi">10</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">43</span><span class="p">:</span><span class="mi">33</span><span class="p">)</span> 
-<span class="n">n</span> <span class="mf">3.7</span><span class="o">.</span><span class="mi">7</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Mar</span> <span class="mi">10</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">43</span><span class="p">:</span><span class="mi">33</span><span class="p">)</span> 
-<span class="p">[</span><span class="n">Clang</span> <span class="mf">11.0</span><span class="o">.</span><span class="mi">0</span> <span class="p">(</span><span class="n">clang</span><span class="o">-</span><span class="mf">1100.0</span><span class="o">.</span><span class="mf">33.17</span><span class="p">)]</span> <span class="n">on</span> <span class="n">darwin</span>
-<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hello world&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="s1">&#39;Hello world&#39;</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="s1">&#39;Hello&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;World&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">+</span><span class="n">b</span>
-<span class="s1">&#39;HelloWorld&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="s1">&#39;o&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> 
-</pre></div>
-</div>
-<p>This is the <strong>script.py</strong> file:</p>
-<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">msg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-
-
-<span class="n">msg</span><span class="p">(</span><span class="s1">&#39;Claus&#39;</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>

@@ -4,9 +4,7 @@ Session 12 - Dataclasses
 Materials
 ---------
 
-
-
-* `Code examples from teachings <https://github.com/python-elective-kea/fall2020-code-examples-from-teachings/tree/master/w48>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses12>`_
 
 Exercises
 ---------
