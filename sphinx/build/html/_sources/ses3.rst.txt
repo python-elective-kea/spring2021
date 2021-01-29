@@ -3,11 +3,14 @@ Session 3 - Mandatory assignment
 
 Todays lectures will be used for your first mandatory assignment. The assignment is an individual assignment, but you are welcome to work together in solving this. Everybody should hand in individualy though. 
 
-Python Class A:
-Start time: Tuesday 8:30
-End Time: Tuesday 11:45
-Peer Review: Latest Wednessday 12:00 (tomorrow)
-`Assignment on fronter <>`_
+
+.. note::
+
+        |Python Class A:
+        |Start time: Tuesday 8:30
+        |End Time: Tuesday 11:45
+        |Peer Review: Latest Wednessday 12:00 (tomorrow)
+        |`Assignment on fronter <>`_
 
 Python Class B:
 Start time: Tuesday 12:30
