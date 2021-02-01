@@ -27,13 +27,16 @@ Sessions Workflow
 -----------------
 The sessions are 3 hours long and will primarely follow this pattern:
 
-========= ===========================
-Minutes   Topic
-========= ============================
-00 - 45   Introduktion to todays topic
-45 - 150  Study groups
-150 - 180 Follow up and Godbuy
-========= ============================
+.. list-table:: Teachings Workflow
+        :widths: 50 50
+        :header-rows: 0
+
+        * - 00 - 45   
+          - Introduktion to todays topic
+        * - 45 - 150  
+          - Study groups
+        * - 150 - 180 
+          - Follow up and Godbuy
 
 Online Teachings
 ----------------
