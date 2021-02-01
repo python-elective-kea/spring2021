@@ -28,14 +28,14 @@ Sessions Workflow
 The sessions are 3 hours long and will primarely follow this pattern:
 
 .. list-table:: Teachings Workflow
-        :widths: 50 50
+        :widths: 25 75
         :header-rows: 0
 
-        * - 00 - 45   
+        * - 50 min   
           - Introduktion to todays topic
-        * - 45 - 150  
-          - Study groups
-        * - 150 - 180 
+        * - 1,5 hour  
+          - Study groups (Claus will jump in and out of your rooms)
+        * - 30 min 
           - Follow up and Godbuy
 
 Online Teachings
