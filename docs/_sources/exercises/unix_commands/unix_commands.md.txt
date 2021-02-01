@@ -1,6 +1,6 @@
 # UNIX Commands Exercises
 
-Before doing these exercises be sure to read : [CommandLineCrashCourse.pdf](_static/CommandLineCrashCourse.pdf)
+Before doing these exercises be sure to read : [CommandLineCrashCourse.pdf](../../_static/CommandLineCrashCourse.pdf)
 
 ## Necessary files to complete this exercise.
 
