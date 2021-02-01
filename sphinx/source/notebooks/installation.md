@@ -19,6 +19,11 @@ Navigate to the Docker website and download and install Docker Desktop for your 
 
 [Docker Desktop download](https://www.docker.com/products/docker-desktop)    
 
+## Windows Home 10 users
+On Windows Home 10 you could run into some trouble while installing Docker.     
+Follow these steps to solve these problems.     
+[Install Docker Desktop on Windows Home](https://docs.docker.com/docker-for-windows/install-windows-home/)
+
 #### Check if everything is installed
 In your terminal or powershell you should type ``` docker --version ``` and get the following result.
 

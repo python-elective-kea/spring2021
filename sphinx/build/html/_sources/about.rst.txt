@@ -25,12 +25,14 @@ Course Workload
     
 Sessions Workflow
 -----------------
+The sessions are 3 hours long and will primarely follow this pattern:
 
-..      | 12:15 - 12:45 : Feedback on the exercises from last week    
-        | 12:45 - 13:15 : New stuff & Small exercises (ping pong)    
-        | 13:15 - 13:30 : Break    
-        | 13:30 - 15:00 : New stuff & Small exercises (ping pong)    
-        | 15:00 - 15:30 : Recap and what to do until next time talk.    
+========= ======
+Minutes   Topic
+========= ======
+00 - 45   Introduktion to todays topic
+45 - 150  Study groups
+150 - 180 Follow up and Godbuy
 
 
 Online Teachings

@@ -1,7 +1,5 @@
 Session 9 - Functions &  Decorators  
 ===================================
-.. note::
-        Al undervisning foregår i dag via `Teams <https://teams.microsoft.com/l/team/19%3a193897e03bd94e108dd06ec0b96fae45%40thread.tacv2/conversations?groupId=2447ae3d-f23e-40be-aed5-07efa12b18a6&tenantId=d10c3c6e-c228-4944-8b6a-6067c6afe3c9>`_.
 
 Decorators in python are widely used to add new functionallity to already existing code.
 
