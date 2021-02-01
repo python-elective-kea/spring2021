@@ -24,7 +24,7 @@ Materials
 * `Is Python interpreted or compiled? Yes. <https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html>`_
 * `Strings and Character Data in Python <https://realpython.com/python-strings/>`_
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_
-* `Docker Commands from today <cheatsheet.rst#week-35-introduction-to-python>`_
+* `Docker Commands from today <cheatsheet.rst>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses1>`_
 
 Exercises
@@ -38,7 +38,7 @@ Quizes
 ------
 * `Python Strings and Character Data Quiz <https://realpython.com/quizzes/python-strings/>`_
 * `Splitting, Concatenating, and Joining Strings in Python Quiz <https://realpython.com/quizzes/python-split-strings/>`_
-* `Command line Crash Course <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=772484>`_
+* `Command line Crash Course <_static/CommandLineCrashCourse.pdf>`_ 
 
 
 

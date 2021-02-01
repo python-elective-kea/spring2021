@@ -1,8 +1,8 @@
 # UNIX Commands Exercises
 
-Before doing these exercises be sure to read "[CommandLineCrashCourse.pdf](https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=772484).   
+Before doing these exercises be sure to read : [CommandLineCrashCourse.pdf](_static/CommandLineCrashCourse.pdf)
 
-Necessary files to complete this exercise.
+## Necessary files to complete this exercise.
 
 * [ex1.acc](https://github.com/python-elective-kea/fall2020/blob/master/sphinx/source/exercises/unix_commands/ex1.acc)   
 * [ ex1.dat](https://github.com/python-elective-kea/fall2020/blob/master/sphinx/source/exercises/unix_commands/ex1.dat)   
