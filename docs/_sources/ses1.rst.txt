@@ -26,7 +26,7 @@ Materials
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_
 * `Docker Commands from today <cheatsheet.rst>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses1>`_
-
+* `Video Screencast from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/blob/main/ses1/readme.md>`_
 Exercises
 ---------
 
