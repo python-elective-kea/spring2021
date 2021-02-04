@@ -15,7 +15,7 @@
 17. mkdir -p newtest/newtest/newtest
 18. mv data/ newtest/newtest/newtest
 19. ls newtest/newtest/newtest
-20. cp newtest/newtest/newtest/* .
+20. cp newtest/newtest/newtest/data/* .
 21. rm -r newtest
 22. wc -l ex1.acc ex1.dat
 23. cat ex1.acc ex1.dat > ex1.tot
