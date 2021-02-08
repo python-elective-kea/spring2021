@@ -21,8 +21,8 @@ Materials
 * `Python "for" Loops <https://realpython.com/python-for-loop/>`_
 * `Python "while" Loops <https://realpython.com/python-while-loop/>`_
 * `How to Use sorted() and sort() in Python <https://realpython.com/python-sort/>`_
-* `Slides <_static/noterlists_tuples.slides.html>`_    (`notebook <notebooks/noterlists_tuples.ipynb>`_)
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses2>`_
+* `Slides <_static/noterlists_tuples.slides.html>`_  `(notebook) <notebooks/noterlists_tuples.ipynb>`_
+* `Code examples and videos from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses2>`_
 * `How to Learn Python in Five Minutes <https://www.youtube.com/watch?v=ohr6O78jGzs>`_
 
 .. raw:: html
@@ -33,7 +33,7 @@ Materials
 Exercises
 ---------
 ---------------------------------
-Ex 1: Build in functions on lists
+Ex 1: Build-in functions on lists
 ---------------------------------
 
 | Look at this list of pythons `build in functions <https://docs.python.org/3/library/functions.html>`_.
@@ -84,11 +84,12 @@ Ex 5: Sort a list of tuples
 :code:`[(1,2),(2,2),(3,2),(2,1),(2,2),(1,5), (10,4), (10, 1), (3, 1)]`    
 
 2. Sort the list so the result looks like this:  
-:code:`[(1, 2), (1, 5), (2, 1), (2, 2), (2, 2), (3, 1), (3, 2), (10, 1), (10, 4)]`   
+:code:`[(2, 1), (3, 1), (10, 1), (1, 2), (2, 2), (2, 2), (3, 2), (10, 4), (1, 5)]`   
 
 .. note:: 
         
-        This is first sorted by the first element in the tuple and the the second element in the tuple. 
+        | This is first sorted by the last element in the tuple and the the first element in the tuple.
+        | You should du this in 1 step, but it might help you to try it out in 2 steps first. 
 
 
 -----------------------

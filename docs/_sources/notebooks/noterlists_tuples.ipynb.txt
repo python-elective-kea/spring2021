@@ -37,7 +37,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": 8,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -56,12 +56,12 @@
     }
    },
    "source": [
-    "Tit den samme type, men det er ikke et krav."
+    "Often the same Type, but not a requirement."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 9,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -74,7 +74,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 10,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -87,7 +87,7 @@
        "[['Hans', 'Alice', 'Bob'], ['Tanni', 'Bodil', 'Bithe']]"
       ]
      },
-     "execution_count": 4,
+     "execution_count": 10,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -107,12 +107,12 @@
     }
    },
    "source": [
-    "## Referere"
+    "## Refer"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 11,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -125,7 +125,7 @@
        "'Alice'"
       ]
      },
-     "execution_count": 5,
+     "execution_count": 11,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -142,8 +142,8 @@
     }
    },
    "source": [
-    "## Lists er 'ordered'\n",
-    "Python lists er garanteret at de forbliver i den samme orden."
+    "## Lists are ordered\n",
+    "Python lists are garanteed to stay in the same order. "
    ]
   },
   {
@@ -154,7 +154,7 @@
     }
    },
    "source": [
-    "## Python 'Samme syntax for alt' - operationer på List og Strings"
+    "## Same syntax for everything"
    ]
   },
   {
@@ -170,7 +170,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 12,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -183,7 +183,7 @@
        "3"
       ]
      },
-     "execution_count": 6,
+     "execution_count": 12,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -194,7 +194,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 13,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -207,7 +207,7 @@
        "list"
       ]
      },
-     "execution_count": 7,
+     "execution_count": 13,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -218,7 +218,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 14,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -231,7 +231,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 15,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -241,10 +241,10 @@
     {
      "data": {
       "text/plain": [
-       "139843876309952"
+       "140262313029952"
       ]
      },
-     "execution_count": 9,
+     "execution_count": 15,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -255,7 +255,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 16,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -268,7 +268,7 @@
        "False"
       ]
      },
-     "execution_count": 10,
+     "execution_count": 16,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -286,7 +286,7 @@
     }
    },
    "source": [
-    "Python er bevidst konsistent"
+    "**Python is deliberately consistent**"
    ]
   },
   {
@@ -297,12 +297,12 @@
     }
    },
    "source": [
-    "### Konkatenerer med + "
+    "### Concatenate"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 17,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -315,7 +315,7 @@
        "['Helo', 12, <function len(obj, /)>, 0, 1, 2, 3, 4]"
       ]
      },
-     "execution_count": 11,
+     "execution_count": 17,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -332,12 +332,12 @@
     }
    },
    "source": [
-    "### Ganger med *"
+    "### Multiply"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 18,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -350,7 +350,7 @@
        "[1, 2, 3, 4, 1, 2, 3, 4]"
       ]
      },
-     "execution_count": 13,
+     "execution_count": 18,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -368,13 +368,14 @@
    },
    "source": [
     "## Reference\n",
-    "Variabler i python er \"by reference\".    \n",
-    "Et object eksisterer og man putter \"gule sticket notes\" på (variabelnavne). "
+    "Variables in python are \"by reference\".    \n",
+    "An object exists in memory, and we then put on yellow sticky notes (variable names).    \n",
+    "(You can add more sticky notes to the object if you want to)."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": 19,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -387,7 +388,7 @@
        "[12, 'Alice', 'Bob']"
       ]
      },
-     "execution_count": 30,
+     "execution_count": 19,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -401,7 +402,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
+   "execution_count": 20,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -414,7 +415,7 @@
        "[12, 'Alice', 'Bob']"
       ]
      },
-     "execution_count": 31,
+     "execution_count": 20,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -431,7 +432,7 @@
     }
    },
    "source": [
-    "Laver ikke en kopi, men peger på det samme i memory"
+    "So 'b' does not create a copy but points at the same object in memory."
    ]
   },
   {
@@ -442,12 +443,12 @@
     }
    },
    "source": [
-    "## Kopiere en liste"
+    "## Copy a list"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 39,
+   "execution_count": 21,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -460,7 +461,7 @@
        "False"
       ]
      },
-     "execution_count": 39,
+     "execution_count": 21,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -472,7 +473,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 40,
+   "execution_count": 22,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -485,7 +486,7 @@
        "True"
       ]
      },
-     "execution_count": 40,
+     "execution_count": 22,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -507,7 +508,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 41,
+   "execution_count": 23,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -517,10 +518,10 @@
     {
      "data": {
       "text/plain": [
-       "[12, 'Alice', 99]"
+       "[12, 'Alice', 'Bob']"
       ]
      },
-     "execution_count": 41,
+     "execution_count": 23,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -531,7 +532,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 42,
+   "execution_count": 24,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -541,10 +542,10 @@
     {
      "data": {
       "text/plain": [
-       "['Alice', 99]"
+       "['Alice', 'Bob']"
       ]
      },
-     "execution_count": 42,
+     "execution_count": 24,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -555,7 +556,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 43,
+   "execution_count": 25,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -565,10 +566,10 @@
     {
      "data": {
       "text/plain": [
-       "99"
+       "'Bob'"
       ]
      },
-     "execution_count": 43,
+     "execution_count": 25,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -579,7 +580,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 44,
+   "execution_count": 26,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -589,10 +590,10 @@
     {
      "data": {
       "text/plain": [
-       "[99, 'Alice', 12]"
+       "['Bob', 'Alice', 12]"
       ]
      },
-     "execution_count": 44,
+     "execution_count": 26,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -616,7 +617,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 27,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -627,10 +628,9 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Helo\n",
       "12\n",
-      "<built-in function len>\n",
-      "0\n"
+      "Alice\n",
+      "Bob\n"
      ]
     }
    ],
@@ -647,12 +647,12 @@
     }
    },
    "source": [
-    "**Det Samme som med Strings**"
+    "**Same thin with Strings**"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": 28,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -685,12 +685,12 @@
     }
    },
    "source": [
-    "## Undersøg om en værdi er i en liste (in / not in)"
+    "## Check if a value is in a list or not"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": 29,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -700,10 +700,10 @@
     {
      "data": {
       "text/plain": [
-       "['Helo', 12, <function len(obj, /)>, 0]"
+       "[12, 'Alice', 'Bob']"
       ]
      },
-     "execution_count": 22,
+     "execution_count": 29,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -714,7 +714,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
+   "execution_count": 30,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -727,7 +727,7 @@
        "False"
       ]
      },
-     "execution_count": 23,
+     "execution_count": 30,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -738,7 +738,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": 31,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -751,7 +751,7 @@
        "True"
       ]
      },
-     "execution_count": 24,
+     "execution_count": 31,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -762,7 +762,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 32,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -775,7 +775,7 @@
        "True"
       ]
      },
-     "execution_count": 25,
+     "execution_count": 32,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -792,12 +792,12 @@
     }
    },
    "source": [
-    "**Kan også gøres på strings**  "
+    "**You can do the same on strings**  "
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 33,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -810,7 +810,7 @@
        "False"
       ]
      },
-     "execution_count": 26,
+     "execution_count": 33,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -821,7 +821,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 34,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -834,7 +834,7 @@
        "True"
       ]
      },
-     "execution_count": 27,
+     "execution_count": 34,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -851,7 +851,7 @@
     }
    },
    "source": [
-    "## Metoder"
+    "## Methods"
    ]
   },
   {
@@ -867,7 +867,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
+   "execution_count": 35,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -877,10 +877,10 @@
     {
      "data": {
       "text/plain": [
-       "['Helo', 12, 0, 333]"
+       "[12, 'Alice', 'Bob', 333]"
       ]
      },
-     "execution_count": 31,
+     "execution_count": 35,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -914,7 +914,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 36,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -927,7 +927,7 @@
        "333"
       ]
      },
-     "execution_count": 32,
+     "execution_count": 36,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -938,7 +938,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": 37,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -948,10 +948,10 @@
     {
      "data": {
       "text/plain": [
-       "0"
+       "'Bob'"
       ]
      },
-     "execution_count": 33,
+     "execution_count": 37,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -968,7 +968,7 @@
     }
    },
    "source": [
-    "Fjerner og returnerer værdien."
+    "Removes and returns the value"
    ]
   },
   {
@@ -995,7 +995,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 34,
+   "execution_count": 38,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1008,7 +1008,7 @@
        "[1, 2, 3, 3, 5, 6, 9]"
       ]
      },
-     "execution_count": 34,
+     "execution_count": 38,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1020,7 +1020,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 35,
+   "execution_count": 39,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1033,7 +1033,7 @@
        "[3, 6, 1, 2, 9, 3, 5]"
       ]
      },
-     "execution_count": 35,
+     "execution_count": 39,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1050,7 +1050,7 @@
     }
    },
    "source": [
-    "returnerer en sorteret liste, ændre ikke på originalen."
+    "Returns a sorted list. Does not change the original."
    ]
   },
   {
@@ -1061,12 +1061,12 @@
     }
    },
    "source": [
-    "### Parametre"
+    "### Parameters"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 40,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1079,7 +1079,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 47,
+   "execution_count": 41,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1092,7 +1092,7 @@
        "[9, 6, 5, 3, 3, 2, 1]"
       ]
      },
-     "execution_count": 47,
+     "execution_count": 41,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1103,7 +1103,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 56,
+   "execution_count": 42,
    "metadata": {
     "slideshow": {
      "slide_type": "slide"
@@ -1116,7 +1116,7 @@
        "['Bob', 'Hans', 'Arne', 'Alice', 'Esmarada', 'Hans Jørgen']"
       ]
      },
-     "execution_count": 56,
+     "execution_count": 42,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1145,13 +1145,13 @@
     }
    },
    "source": [
-    "#### Egne key functioner\n",
-    "Sorter efter at navne med 5 eller flere bogstaver skal komme først."
+    "#### Key functions\n",
+    "Sort by name with 5 or more letters."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 57,
+   "execution_count": 43,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1167,7 +1167,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 58,
+   "execution_count": 44,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1180,7 +1180,7 @@
        "['Alice', 'Esmarada', 'Hans Jørgen', 'Hans', 'Bob', 'Arne']"
       ]
      },
-     "execution_count": 58,
+     "execution_count": 44,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1208,18 +1208,18 @@
     }
    },
    "source": [
-    "**.sort()** er en metode i list objektet.   \n",
-    "Generelt skal i undgå at bruge den, og istedet bruge **sorted()**.    \n",
-    "Grund: \n",
-    "* sorted() kan bruges på alle 'iterable objects', .sort() kan kun bruges på lists.   \n",
-    "* sorted() ændre ikke i den oprindelige liste. .sort() gør. \n",
+    "**.sort()** is a method in the list object.     \n",
+    "Avoid using this, instead use **sorted()**         \n",
+    "Reason:     \n",
+    "* sorted() can be used on all 'iterable objects', .sort() only works on lists.   \n",
+    "* sorted() does not change the original list, .sort() does. \n",
     "\n",
-    "Eksempel med string"
+    "String example"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 60,
+   "execution_count": 45,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1233,7 +1233,7 @@
      "traceback": [
       "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
       "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-60-474c8408a842>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0ms\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msort\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m<ipython-input-45-474c8408a842>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0ms\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msort\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
       "\u001b[0;31mAttributeError\u001b[0m: 'str' object has no attribute 'sort'"
      ]
     }
@@ -1244,7 +1244,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 64,
+   "execution_count": 46,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1257,7 +1257,7 @@
        "['o', 'l', 'l', 'e', 'H']"
       ]
      },
-     "execution_count": 64,
+     "execution_count": 46,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1274,7 +1274,7 @@
     }
    },
    "source": [
-    "# Filer"
+    "# Files"
    ]
   },
   {
@@ -1285,12 +1285,12 @@
     }
    },
    "source": [
-    "## Læs fra filer"
+    "## Read from files"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 85,
+   "execution_count": 49,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1303,7 +1303,7 @@
        "'An expert is a person who has made all the mistakes that can be made in a very narrow field.\\nPrediction is very difficult, especially about the future.\\nThose who are not shocked when they first come across quantum theory cannot possibly have understood it.\\n'"
       ]
      },
-     "execution_count": 85,
+     "execution_count": 49,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1315,7 +1315,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 86,
+   "execution_count": 50,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1328,7 +1328,7 @@
        "'An expert is a person who has made all the mistakes that can be made in a very narrow field.\\n'"
       ]
      },
-     "execution_count": 86,
+     "execution_count": 50,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1340,7 +1340,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 87,
+   "execution_count": 51,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1355,7 +1355,7 @@
        " 'Those who are not shocked when they first come across quantum theory cannot possibly have understood it.\\n']"
       ]
      },
-     "execution_count": 87,
+     "execution_count": 51,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1373,12 +1373,12 @@
     }
    },
    "source": [
-    "## Skriv til filer"
+    "## Write to files"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 89,
+   "execution_count": 52,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1391,7 +1391,7 @@
        "11"
       ]
      },
-     "execution_count": 89,
+     "execution_count": 52,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1403,7 +1403,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 91,
+   "execution_count": 53,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1416,7 +1416,7 @@
        "'Hello world'"
       ]
      },
-     "execution_count": 91,
+     "execution_count": 53,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1445,18 +1445,19 @@
     }
    },
    "source": [
-    "Tuples er en anden form for ordnet samling af objekter.    \n",
-    "Altså: 'Ordered collection of objects'.    \n",
+    "Tuples are another datastructure of ordered objects.        \n",
     "\n",
-    "> Tuples er omkranset af () i stedet for lists []    \n",
-    "> Tuples er 'imutable'    \n",
+    "**'Ordered collection of objects'.**    \n",
+    "\n",
+    "> Tuples are written with () instead of [].    \n",
+    "> Tuples are'imutable' -> they can not be changed    \n",
     "\n",
     "## Definition:"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 71,
+   "execution_count": 54,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1475,7 +1476,7 @@
     }
    },
    "source": [
-    "Tit den samme type, men det er ikke et krav."
+    "Also not necessarily of the same type"
    ]
   },
   {
@@ -1486,12 +1487,12 @@
     }
    },
    "source": [
-    "## Referere"
+    "## Refer"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 73,
+   "execution_count": 55,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1504,7 +1505,7 @@
        "3"
       ]
      },
-     "execution_count": 73,
+     "execution_count": 55,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1526,7 +1527,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 74,
+   "execution_count": 56,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1539,7 +1540,7 @@
        "6"
       ]
      },
-     "execution_count": 74,
+     "execution_count": 56,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1556,7 +1557,7 @@
     }
    },
    "source": [
-    "### Konkatenerer med + "
+    "### Concatenate"
    ]
   },
   {
@@ -1615,12 +1616,12 @@
     }
    },
    "source": [
-    "### Ganger med *"
+    "### Multiply"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 80,
+   "execution_count": 57,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1633,7 +1634,7 @@
        "(1, 2, 3, 4, 1, 2, 3, 4)"
       ]
      },
-     "execution_count": 80,
+     "execution_count": 57,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1655,7 +1656,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 81,
+   "execution_count": 58,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1668,7 +1669,7 @@
        "(1, 2, 3)"
       ]
      },
-     "execution_count": 81,
+     "execution_count": 58,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1692,7 +1693,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 84,
+   "execution_count": 59,
    "metadata": {
     "slideshow": {
      "slide_type": "-"
@@ -1710,398 +1711,6 @@
    "source": [
     "for i in t:\n",
     "    print(i, end=',')"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "# List comprehensions"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "source": [
-    "List Comprehensions provide an elegant way to create new lists.    \n",
-    "The following shows the basic structure of a list comprehension:"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 110,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "outputs": [],
-   "source": [
-    "l = [x for x in [1, 2, 3, 4]]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 111,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[1, 2, 3, 4]"
-      ]
-     },
-     "execution_count": 111,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "l"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "Et for loop der skrives som dette:"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 112,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
-      ]
-     },
-     "execution_count": 112,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "l = []\n",
-    "for i in range(1, 10):\n",
-    "    l.append(i)\n",
-    "l"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "source": [
-    "Kunne skrives mere elegangt med en list comprehension"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 113,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
-      ]
-     },
-     "execution_count": 113,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "[i for i in range(1, 10)]"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "## STUDENTS 10 MINUTES TASK\n",
-    "\n",
-    "1. Create a list of capital letters in the english alphabet\n",
-    "2. Create a list of capital letter from the english aplhabet, but exclude 4 with the Unicode code point of either 70, 75, 80, 85.\n",
-    "3. Create a list of capital letter from from the english aplhabet, but exclude every second between F & O"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "## if, else\n",
-    "if"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 125,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[2, 4, 6, 8]"
-      ]
-     },
-     "execution_count": 125,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "[x for x in range(1, 10) if x%2 == 0]"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "else"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 122,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "['un-even', 2, 'un-even', 4, 'un-even', 6, 'un-even', 8, 'un-even']"
-      ]
-     },
-     "execution_count": 122,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "[x  if x%2 == 0 else 'un-even'  for x in range(1, 10)]"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "## Nested for loops\n",
-    "Like you can do a nested for loop"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 123,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]"
-      ]
-     },
-     "execution_count": 123,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "l = []\n",
-    "for i in range(3):\n",
-    "    for j in range(2):\n",
-    "        l.append((i, j))\n",
-    "l"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "source": [
-    "You can create nested list comprehensions"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 117,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]"
-      ]
-     },
-     "execution_count": 117,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "[(i,j) for i in range(3) for j in range(2)]"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "## STUDENTS 10 MINUTES TASK\n",
-    "\n",
-    "1. From 2 lists, using a list comprehension, create a list containing:\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 118,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[('Black', 's'),\n",
-       " ('Black', 'm'),\n",
-       " ('Black', 'l'),\n",
-       " ('Black', 'xl'),\n",
-       " ('White', 's'),\n",
-       " ('White', 'm'),\n",
-       " ('White', 'l'),\n",
-       " ('White', 'xl')]"
-      ]
-     },
-     "execution_count": 118,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "[('Black', 's'), ('Black', 'm'), ('Black', 'l'), ('Black', 'xl'), ('White', 's'), ('White', 'm'), ('White', 'l'), ('White', 'xl')]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 119,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "-"
-    }
-   },
-   "outputs": [],
-   "source": [
-    "colors = ['Black', 'White']\n",
-    "sizes = ['s', 'm', 'l', 'xl']"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 120,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "skip"
-    }
-   },
-   "outputs": [],
-   "source": [
-    "# exercise: \n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "2. If the tuple pair is in the following list, it should not be added to the comprehension generated list. "
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 120,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "skip"
-    }
-   },
-   "outputs": [],
-   "source": [
-    "# exercise: \n",
-    "\n"
    ]
   }
  ],
