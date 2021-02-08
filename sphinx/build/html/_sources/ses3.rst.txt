@@ -7,7 +7,7 @@ Todays lectures will be used for your first mandatory assignment. The assignment
 .. note:: 
 
         | **Python Class A:**
-        | `Assignment on fronter <>`_
+        | `Assignment on fronter <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=850400>`_
         | Start time: Tuesday 8:30
         | Hand in latest: **Tuesday 11:45**
         
@@ -15,7 +15,7 @@ Todays lectures will be used for your first mandatory assignment. The assignment
 .. note::
 
         | **Python Class B:**
-        | `Assignment on fronter <>`_
+        | `Assignment on fronter <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=850426>`_
         | Start time: Tuesday 12:30
         | Hand in latest: **Tuesday 15:45**
         

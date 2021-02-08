@@ -88,8 +88,8 @@ Ex 5: Sort a list of tuples
 
 .. note:: 
         
-        | This is first sorted by the last element in the tuple and the the first element in the tuple.
-        | You should du this in 1 step, but it might help you to try it out in 2 steps first. 
+        | This is first sorted by the last element in the tuple and then the first element in the tuple.
+        | You should do this in 1 step, but it might help you to try it out in 2 steps first. 
 
 
 -----------------------
