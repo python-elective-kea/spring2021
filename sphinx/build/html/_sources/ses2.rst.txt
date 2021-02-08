@@ -42,7 +42,7 @@ By using the slicing syntax change the following collections.
 
 After slicing:
 
-.. code: Python
+.. code:: Python
         :linenos:
 
         ['Hello', 'World', 'Huston', 'we', 'are', 'here'] should become -> ['World', 'Huston', 'we', 'are']
