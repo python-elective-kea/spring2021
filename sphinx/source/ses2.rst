@@ -32,6 +32,27 @@ Materials
 
 Exercises
 ---------
+---------------
+Ex 0.1: Slicing
+---------------
+
+`Solution <exercises/solution/02_lists/sorted_exercises.rst>`_
+
+By using the slicing syntax change the following collections.
+
+After slicing:
+
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] should become -> ['World', 'Huston', 'we', 'are']
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['Hello', 'World']
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['are', 'here']
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['are']
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['Hello', 'Huston', 'are']
+* ['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['here', 'are', 'we', 'Huston', 'World', 'Hello']
+* ('Hello', 'World', 'Huston', 'we', 'are', 'here') should become -> ['World', 'Huston', 'we', 'are']
+* 'Hello World Huston we are here' -> 'World Huston we'
+
+Figure out more on your own and practice this a lot!    
+
 ---------------------------------
 Ex 1: Build-in functions on lists
 ---------------------------------
