@@ -80,16 +80,6 @@ Ex 2: Clothes List Comprehension
         soled_out = [('Black', 'm'), ('White', 's')]
 
 
------------------
-Ex 2: Sort a Text
------------------
-
-`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-2-sort-a-text>`_
-
-Based on this exercise from last time sort it by using a list comprehensions instead. 
-
-.. literalinclude:: exercises/solution/02_lists/sort_a_string.py
-        :linenos:
 
 ----------------------------
 Ex 3: List & tuple exercises

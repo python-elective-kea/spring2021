@@ -98,7 +98,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ex-1-alphabet-list-comprehensions">Ex 1: Alphabet List Comprehensions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex-2-clothes-list-comprehension">Ex 2: Clothes List Comprehension</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ex-2-sort-a-text">Ex 2: Sort a Text</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex-3-list-tuple-exercises">Ex 3: List &amp; tuple exercises</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex-4-sys-module-exercise">Ex 4: Sys module exercise</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex-5-os-module-exercise">Ex 5: OS Module exercise</a></li>
@@ -292,26 +291,6 @@
 <li><p>If the tuple pair is in the following list, it should not be added to the comprehension generated list.</p></li>
 </ol>
 <div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="n">soled_out</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Black&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;White&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">)]</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="ex-2-sort-a-text">
-<h3>Ex 2: Sort a Text<a class="headerlink" href="#ex-2-sort-a-text" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="exercises/solution/03_os_sub_req/solutions.html#ex-2-sort-a-text"><span class="std std-ref">Solution</span></a></p>
-<p>Based on this exercise from last time sort it by using a list comprehensions instead.</p>
-<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sort_cons</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">]:</span>
-        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    
-    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">sort_cons</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">))</span>
 </pre></div>
 </td></tr></table></div>
 </div>
