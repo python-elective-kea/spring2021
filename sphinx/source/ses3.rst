@@ -3,6 +3,8 @@ Session 3 - Mandatory assignment
 
 Todays lectures will be used for your first mandatory assignment. The assignment is an individual assignment, but you are welcome to work together in solving this. Everybody should hand in individualy though. 
 
+**Solutions**
+`Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
 .. note:: 
 
