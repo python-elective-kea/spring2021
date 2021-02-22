@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Files / Contextmanager &mdash; Introduction to python 4.0.0 documentation</title>
+  <title>List Comprehensions &mdash; Introduction to python 4.0.0 documentation</title>
   
 
   
@@ -149,7 +149,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Files / Contextmanager</li>
+      <li>List Comprehensions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -425,60 +425,6 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Files-/-Contextmanager">
-<h1>Files / Contextmanager<a class="headerlink" href="#Files-/-Contextmanager" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Files">
-<h2>Files<a class="headerlink" href="#Files" title="Permalink to this headline">¶</a></h2>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>f = open(&#39;testfile.txt&#39;, &#39;r&#39;)
-print(f.read())
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Hello World
-</pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>f.close()
-</pre></div>
-</div>
-</div>
-<div class="section" id="Using-a-context-manager">
-<h3>Using a context manager<a class="headerlink" href="#Using-a-context-manager" title="Permalink to this headline">¶</a></h3>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>with open(&#39;testfile.txt&#39;, &#39;r&#39;) as f:
-    print(f.read())
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Hello World
-</pre></div></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="List-Comprehensions">
 <h1>List Comprehensions<a class="headerlink" href="#List-Comprehensions" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">

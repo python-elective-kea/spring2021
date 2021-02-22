@@ -30,8 +30,8 @@ Materials
 * `How to Build Command Line Interfaces in Python With argparse <https://realpython.com/command-line-interfaces-python-argparse/>`_
 * `Python’s Requests Library <https://realpython.com/python-requests/>`_
 * `Downloading Files from URLs in Python <https://www.codementor.io/aviaryan/downloading-files-from-urls-in-python-77q3bs0un>`_ 
-* `Slides <_static/Notes-Contextmanager-ListComp-modules.slides.html>`_  (`Notebook <notebooks/Notes-Contextmanager-ListComp-modules.ipynb>`_ )
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses4>`_
+* `Notebook <notebooks/Notes-Contextmanager-ListComp-modules.ipynb>`_
+* `Code examples & videos from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses4>`_
 
 Exercises
 ---------
@@ -41,7 +41,7 @@ Exercises
 ----------------------------------
 Ex 1: Alphabet List Comprehensions
 ----------------------------------
-`Solution <exercises/solution/03_os_sub_req/solutions#ex-1-alphabet-list-comprehensions>`_
+`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-1-alphabet-list-comprehensions>`_
 
 1. Create a list of capital letters in the english alphabet
 2. Create a list of capital letter from the english aplhabet, but exclude 4 with the Unicode code point of either 70, 75, 80, 85.
