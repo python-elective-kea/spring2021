@@ -14,8 +14,8 @@ Dockerfile
 #/docs/exercises/solution/02_lists/*
 
 # 03
-/sphinx/build/html/exercises/solution/03_os_sub_req/*
-/docs/exercises/solution/03_os_sub_req/*
+#/sphinx/build/html/exercises/solution/03_os_sub_req/*
+#/docs/exercises/solution/03_os_sub_req/*
 
 
 # 04 OOP
