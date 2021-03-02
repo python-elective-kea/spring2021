@@ -45,7 +45,7 @@ Ex 1: Clone, build and run
 
 * Run a container based on this image
   
-  * :code:`$ docker run -it --rm -v ${PWD}:/docs clbo/python`
+  * :code:`$ docker run -it --rm -v ${PWD}:/docs test/python`
 
         
 Ex 2: Node app and docker
