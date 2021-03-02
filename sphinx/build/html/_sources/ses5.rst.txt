@@ -33,19 +33,24 @@ Ex 1: Clone, build and run
 
 * Clone this repository:
   
-  * git clone https://github.com/python-elective-kea/clbo-alpine-dev-env.git
+  * :code:`$ git clone https://github.com/python-elective-kea/clbo-alpine-dev-env.git`
+
+* CD into clbo-alpine-dev-env
+
+  * :code:`$ cd clbo-alpine-dev-env`
 
 * Build an Image based on the repositorys Dockerfile.
   
-  * docker build --tag clbo/python
+  * :code:`$ docker build --tag test/python .`
 
 * Run a container based on this image
   
-  * docker run -it --rm -v ${PWD}:/docs clbo/python
+  * :code:`$ docker run -it --rm -v ${PWD}:/docs clbo/python`
 
         
 Ex 2: Node app and docker
 *************************
+In this exercise you are not going to code in python. The programming language used is Javascript, and the application is a Node.js application. However, the purpouse of the exercise is not the language but it is to use Docker to run an application. 
 
 * `Build and run your image <https://docs.docker.com/get-started/part2/>`_
 
@@ -66,24 +71,33 @@ The code you need is something like this:
        printf("Hello, World!");
        return 0;
    } 
+
+.. note::
    
+   | The approach is not different from what you have done with Docker and python files so far. 
+   | * You should build a container based on an image (gcc) and 
+   | * You should share a volume `(-v ${PWD}:/docs)` between your host computer and your container where your hello world file are in. 
+   | * You should then compile and run the file in the container. 
+   | Compiling and running a c program is new to you, and you will have investigate that topic. 
+
 
 Ex 4: Docker'ise' your own projects
 ***********************************
 
-This exercise should be done in groups.
+**This exercise should be done in groups.**
+
 * You should create a project that makes use of the requests module.
 * You should push this project to a github account and all in the group should have push rights to this repository.
-* The project should contain a Dockerfile that as a minimum has a :code:`pip install -r requirements.txt` line in it.
+* The project should contain a Dockerfile that has a :code:`pip install -r requirements.txt` line in it.
 * All group members should clone the repository, build the image based on the Dockerfile, and run a container with the right modules installed.
 
 When this setup is up and running each group member should: 
 
-* install a new 3rd. party module in the container. 
+* install a new 3rd. party module in the container. (look at pypi.org) 
 * Create some simple (maybe even stupid) code that makes use of this module
 * do a :code:`pip freeze > requirements.txt`
 * Push the changes to github
-* Pull the other group members changes and do a :code:`docker build --tag nameoftheimage:1.1 .`  
+* Pull the other group members changes and do a :code:`docker build --tag nameoftheimage:latest .`  
 
 .. warning::
         It might be a good idea that each group member does this one at a time.
@@ -113,3 +127,7 @@ Ex 7: From Html to Markdown
 Get the html of this `page <https://clbokea.github.io/exam/assignment_2.html>`_ , and change it from a html page to a Markdown page. 
 
 You can read a bit about markdown `here <notebooks/html_markdown.rst>`_
+
+.. note::
+
+   This should of cause be done "automatically" by a python application that you create for the purpouse.

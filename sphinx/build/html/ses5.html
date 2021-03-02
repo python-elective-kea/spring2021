@@ -251,23 +251,29 @@
 <ul class="simple">
 <li><p>Clone this repository:</p>
 <ul>
-<li><p>git clone <a class="reference external" href="https://github.com/python-elective-kea/clbo-alpine-dev-env.git">https://github.com/python-elective-kea/clbo-alpine-dev-env.git</a></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/python-elective-kea/clbo-alpine-dev-env.git</span></code></p></li>
+</ul>
+</li>
+<li><p>CD into clbo-alpine-dev-env</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">clbo-alpine-dev-env</span></code></p></li>
 </ul>
 </li>
 <li><p>Build an Image based on the repositorys Dockerfile.</p>
 <ul>
-<li><p>docker build –tag clbo/python</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">$</span> <span class="pre">docker</span> <span class="pre">build</span> <span class="pre">--tag</span> <span class="pre">test/python</span> <span class="pre">.</span></code></p></li>
 </ul>
 </li>
 <li><p>Run a container based on this image</p>
 <ul>
-<li><p>docker run -it –rm -v ${PWD}:/docs clbo/python</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">$</span> <span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">--rm</span> <span class="pre">-v</span> <span class="pre">${PWD}:/docs</span> <span class="pre">clbo/python</span></code></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="ex-2-node-app-and-docker">
 <h4>Ex 2: Node app and docker<a class="headerlink" href="#ex-2-node-app-and-docker" title="Permalink to this headline">¶</a></h4>
+<p>In this exercise you are not going to code in python. The programming language used is Javascript, and the application is a Node.js application. However, the purpouse of the exercise is not the language but it is to use Docker to run an application.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.docker.com/get-started/part2/">Build and run your image</a></p></li>
 </ul>
@@ -285,21 +291,33 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">The approach is not different from what you have done with Docker and python files so far.</div>
+<div class="line">* You should build a container based on an image (gcc) and</div>
+<div class="line">* You should share a volume <cite>(-v ${PWD}:/docs)</cite> between your host computer and your container where your hello world file are in.</div>
+<div class="line">* You should then compile and run the file in the container.</div>
+<div class="line">Compiling and running a c program is new to you, and you will have investigate that topic.</div>
+</div>
+</div>
 </div>
 <div class="section" id="ex-4-docker-ise-your-own-projects">
 <h4>Ex 4: Docker’ise’ your own projects<a class="headerlink" href="#ex-4-docker-ise-your-own-projects" title="Permalink to this headline">¶</a></h4>
-<p>This exercise should be done in groups.
-* You should create a project that makes use of the requests module.
-* You should push this project to a github account and all in the group should have push rights to this repository.
-* The project should contain a Dockerfile that as a minimum has a <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> line in it.
-* All group members should clone the repository, build the image based on the Dockerfile, and run a container with the right modules installed.</p>
+<p><strong>This exercise should be done in groups.</strong></p>
+<ul class="simple">
+<li><p>You should create a project that makes use of the requests module.</p></li>
+<li><p>You should push this project to a github account and all in the group should have push rights to this repository.</p></li>
+<li><p>The project should contain a Dockerfile that has a <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> line in it.</p></li>
+<li><p>All group members should clone the repository, build the image based on the Dockerfile, and run a container with the right modules installed.</p></li>
+</ul>
 <p>When this setup is up and running each group member should:</p>
 <ul class="simple">
-<li><p>install a new 3rd. party module in the container.</p></li>
+<li><p>install a new 3rd. party module in the container. (look at pypi.org)</p></li>
 <li><p>Create some simple (maybe even stupid) code that makes use of this module</p></li>
 <li><p>do a <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code></p></li>
 <li><p>Push the changes to github</p></li>
-<li><p>Pull the other group members changes and do a <code class="code docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span> <span class="pre">--tag</span> <span class="pre">nameoftheimage:1.1</span> <span class="pre">.</span></code></p></li>
+<li><p>Pull the other group members changes and do a <code class="code docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span> <span class="pre">--tag</span> <span class="pre">nameoftheimage:latest</span> <span class="pre">.</span></code></p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -325,6 +343,10 @@
 <h4>Ex 7: From Html to Markdown<a class="headerlink" href="#ex-7-from-html-to-markdown" title="Permalink to this headline">¶</a></h4>
 <p>Get the html of this <a class="reference external" href="https://clbokea.github.io/exam/assignment_2.html">page</a> , and change it from a html page to a Markdown page.</p>
 <p>You can read a bit about markdown <a class="reference internal" href="notebooks/html_markdown.html"><span class="doc">here</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This should of cause be done “automatically” by a python application that you create for the purpouse.</p>
+</div>
 </div>
 </div>
 </div>
