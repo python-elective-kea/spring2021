@@ -54,7 +54,7 @@ Create a Bank, an Account, and a Customer class.
 
 Stick to the techniques we have covered so far.
 
-* Add the abillity for you __init__ method to handle different inputs (parameters).
+* Add the abillity for your __init__ method to handle different inputs (parameters).
 
 
 .. raw:: html
