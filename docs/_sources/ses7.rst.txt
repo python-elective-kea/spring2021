@@ -30,7 +30,7 @@ Exercises
 Encaptiolation & Propeties exercises
 ------------------------------------
 
-All following exercises should be done by using **Properties** when needed. The focus should be on encapsulation. 
+All following exercises should be done by using **Properties** when needed (Ex 1 should have also properties every where even though its not needed). The focus should be on encapsulation. 
 
 
 Ex 1:  Car object
@@ -38,7 +38,7 @@ Ex 1:  Car object
 
 `Solution <exercises/solution/05_encapsulation/solutions.rst>`_
 
-Create a Car class. When instanciated the object should be able to take 4 attributes (Make, Model, bhp, mph). They all 4 should be properties.
+Create a Car class. When instanciated the object should be able to take 4 attributes (Make, Model, bhp, mph). They all 4 should be properties. (Even though this is not nessary here, you should create properties in order just to try it out).
 
 
 
