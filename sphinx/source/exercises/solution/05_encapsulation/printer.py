@@ -12,30 +12,21 @@ class Machine:
     """ takes care of turning on and off  """
 
     def __init__(self):
-        self.__is_on = False
-
-    @property
-    def is_on(self):
-        return self.__is_on
-
+        self._is_on = False
+    
     def power(self):
-        self.__is_on = not self.__is_on
+        self._is_on = not self._is_on
 
 class Printer(Machine):
     def __init__(self):
-        # 1.
-        super().__init__()
-
-        # 2.
-        # Machine.__init__(self)
-        
+        Machine.__init__(self)
         self.__pt = Papertray()
 
     def print(self, text):
         if self.__pt.paper == 0:
             print('Papertray is empty')
         else:
-            if self.is_on:
+            if self._is_on:
                 print(text)
                 self.__pt.paper = self.__pt.paper - 1
             else:
@@ -45,7 +36,7 @@ class Printer(Machine):
     def load(self):
         return self.__pt.paper
 
-    load.setter
+    @load.setter
     def load(self, no):
         self.__pt.paper = no
 

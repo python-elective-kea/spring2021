@@ -13,7 +13,7 @@ Ex 1: Car object
 Ex 2: Bank
 ----------
 
-.. literalinclude:: encaptiolation.py 
+.. literalinclude:: bank.py 
    :linenos:
    :language: python
 

@@ -26,7 +26,7 @@ class Bank:
             self.__accounts.append(acc)
 
     def __has_account(self, acc):
-        for i in self.accounts:
+        for i in self.__accounts:
             if acc.cust.name == i.cust.name:
                 raise ValueError('Customer aleready has an account!')
         return False
@@ -36,24 +36,6 @@ class Account:
         self.no = no
         self.cust = cust
 
-    # no
-    @property
-    def no(self):
-        return self.__no
-
-    @no.setter
-    def no(self, no):
-        self.__no = no
-
-    # cust
-    @property
-    def cust(self):
-        return self.__cust
-
-    @cust.setter
-    def cust(self, cust):
-        self.__cust = cust
-
     def __repr__(self):
         return str(self.__dict__)
 
@@ -62,13 +44,6 @@ class Customer:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-
-    @property
-    def name(self):
-        return self.__name
-    @name.setter
-    def name(self, name):
-        self.__name = name
 
     @property
     def age(self):

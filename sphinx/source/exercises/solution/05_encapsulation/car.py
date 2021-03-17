@@ -12,7 +12,7 @@ class Car:
         self.bhp = args[2]
         self.mph = args[3]
 
-    // make
+    # make
     @property 
     def make(self):
         return self.__make
@@ -23,29 +23,29 @@ class Car:
 
 
 
-    // model
+    # model
     @property 
     def model(self):
         return self.__model
     
     @model.setter
-    def make(self, model):
+    def model(self, model):
         self.__model = model
 
 
     
-    // bhp
+    # bhp
     @property 
     def bhp(self):
         return self.__bhp
     
     @bhp.setter
-    def make(self, bhp):
+    def bhp(self, bhp):
         self.__bhp = bhp
 
 
 
-    // mph
+    # mph
     @property 
     def mph(self):
         return self.__mph
