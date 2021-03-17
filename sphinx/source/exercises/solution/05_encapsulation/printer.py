@@ -12,7 +12,7 @@ class Machine:
     """ takes care of turning on and off  """
 
     def __init__(self):
-        self._is_on = False
+        self._is_on = False  # one _ = protected (to be used only in subclasses) 
     
     def power(self):
         self._is_on = not self._is_on
