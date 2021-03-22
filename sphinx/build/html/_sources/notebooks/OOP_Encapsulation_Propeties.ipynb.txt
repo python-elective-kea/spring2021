@@ -707,20 +707,27 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
     "class Deck:\n",
     "    def __init__(self):\n",
     "        self.cards = ['A', 'K', 4, 7]\n",
+    "    \n",
     "    def __getitem__(self, key):\n",
-    "        return self.cards[key]"
+    "        return self.cards[key]\n",
+    "\n",
+    "    def __repr__(self):\n",
+    "        return f'{self.__dict__}'\n",
+    "\n",
+    "    def __len__(self):\n",
+    "        return len(self.cards)\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [
     {
@@ -729,7 +736,7 @@
        "7"
       ]
      },
-     "execution_count": 13,
+     "execution_count": 2,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -738,6 +745,13 @@
     "d = Deck()\n",
     "d[3]"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
