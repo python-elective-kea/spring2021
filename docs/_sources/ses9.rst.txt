@@ -139,12 +139,12 @@ Ex2: memory-profiler
 
 Measuring the memory ussage of an object, function or piece of code can be of equally importance as the timing functionallity you just created.
 
-Python has a build in module called :code:`resource`. This is a unix system only module, so here all windows users can not find much help.
+Python has a build in module called :code:`resource`. This is a unix system only module. Luckily we are all on a unix based system when we use docker for python development. 
 
-But some third party modules luckily exists. In this exercise, you should work with one of these.
 
-Go to this url https://pypi.org/project/memory-profiler/ and use the module. Notice that you are using a decorator when using this module. 
+**Task:**
 
+Your job is, to write a decorator function that can messure the memory usage of any piece of code.
 
 
 .. _ex3: 
