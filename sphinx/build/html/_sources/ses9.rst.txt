@@ -85,7 +85,7 @@ With this function as a starting point
 1. Write a decorator that writes to a log file the time stamp of each time this function is called.
 2. Change the log decorator to also printing the values of the argument together with the timestamp.
 3. Print the result of the decorated function to the log file also. 
-4. Create a new function and call it printer(text) that takes a text as parameter and either returns or prints the text 2 times. Decorate it with your logfunction. Does it work?    
+4. Create a new function and call it printer(text) that takes a text as parameter and returns the text. Decorate it with your logfunction. Does it work?    
 
 
 
