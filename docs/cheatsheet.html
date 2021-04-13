@@ -93,6 +93,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#session-1-introduction-to-python">Session 1 - Introduction to python</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#session-5-utilities-and-modules">Session 5 - Utilities and Modules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#session-9-functions-decorators">Session 9 - Functions &amp; Decorators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#session-10-generators">Session 10 - Generators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sphinx-commands">Sphinx commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#links">Links</a></li>
 </ul>
@@ -229,6 +230,22 @@ $ docker run -it --rm -v ${PWD}:/docs webscrabing
 <div class="section" id="session-9-functions-decorators">
 <h3>Session 9 - Functions &amp; Decorators<a class="headerlink" href="#session-9-functions-decorators" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work jupyter/datascience-notebook
+</pre></div>
+</div>
+</div>
+<div class="section" id="session-10-generators">
+<h3>Session 10 - Generators<a class="headerlink" href="#session-10-generators" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter
+</pre></div>
+</div>
+<p>The dockerfile for this image:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">jupyter</span><span class="o">/</span><span class="n">datascience</span><span class="o">-</span><span class="n">notebook</span><span class="p">:</span><span class="n">latest</span>
+
+<span class="n">USER</span> <span class="n">jovyan</span>
+<span class="c1"># Default workdir: /home/jovyan</span>
+
+<span class="c1"># install nbextensions</span>
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter_contrib_nbextensions</span> <span class="o">&amp;&amp;</span> <span class="n">jupyter</span> <span class="n">contrib</span> <span class="n">nbextension</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
 </div>
