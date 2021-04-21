@@ -3,7 +3,7 @@ Session 12 - Dataclasses
 
 Materials
 ---------
-
+* `Data Classes in Python 3.7+ (Guide) <https://realpython.com/python-data-classes/>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses12>`_
 
 Exercises
