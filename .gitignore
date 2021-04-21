@@ -44,8 +44,8 @@ Dockerfile
 #/docs/exercises/solution/09_generators/*
 
 # 10 context_managers
-/sphinx/build/html/exercises/solution/10_context_managers/*
-/docs/exercises/solution/10_context_managers/*
+#/sphinx/build/html/exercises/solution/10_context_managers/*
+#/docs/exercises/solution/10_context_managers/*
 
 # 48 Problem Solving
 /sphinx/build/html/exercises/solution/48_problem_solving/*
