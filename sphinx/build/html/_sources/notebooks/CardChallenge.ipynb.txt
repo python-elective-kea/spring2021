@@ -30,12 +30,6 @@
    "outputs": [],
    "source": [
     "# Possible solutions\n",
-    "\n",
-    "a og 7 -> 14\n",
-    "a og 4 -> 3\n",
-    "k -> 0\n",
-    "\n",
-    "\n",
     "\n"
    ]
   },
@@ -44,7 +38,7 @@
    "metadata": {},
    "source": [
     "## Your job is  \n",
-    "1. Make sure you understood the task\n",
+    "1. Make sure you understood the task :)\n",
     "2. Solve the challange\n",
     "3. Create an algorithm that for any 4 cards given can check if the cards can pass the test or not.\n",
     "\n",
