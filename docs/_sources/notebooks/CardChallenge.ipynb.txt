@@ -42,12 +42,20 @@
     "2. Solve the challange\n",
     "3. Create an algorithm that for any 4 cards given can check if the cards can pass the test or not.\n",
     "\n",
-    "Then you should implement the algoritm and code the solution in this **Jupyter Notebook**. You should focus on using a **pythonic** coding style, and you should focus on making your application **as fast as possible**.   \n",
+    "Then you should implement the algoritm and code the solution in **Jupyter Notebook**. You should focus on using a **pythonic** coding style, and you should focus on making your application **as fast as possible**.   \n",
+    "\n",
     "* first create a function that can generate 4 cards with a uppercase letter on one side and a single digit number on the orher side. \n",
     "* Then populate a list with a given number of card sets. \n",
     "* run each card set through the algorithm\n",
     "* get the result of how many card sets passed the test and how many did not, and specify which set violated the rule."
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
