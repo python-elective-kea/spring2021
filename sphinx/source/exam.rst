@@ -38,8 +38,7 @@ At your exam you should demonstrate to wich extend you fullfill the learning goa
 This you should do through demonstrating your knowlege, skills and competencies within these topics. 
 
 Topics will be listed here later this semester.
-
-... 
+ 
         * Data Structures & functions
         * Pythonic OOP
         * Generators, Decorators & Context Managers
