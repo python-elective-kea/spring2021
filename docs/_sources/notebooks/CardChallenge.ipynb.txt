@@ -50,13 +50,6 @@
     "* run each card set through the algorithm\n",
     "* get the result of how many card sets passed the test and how many did not, and specify which set violated the rule."
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

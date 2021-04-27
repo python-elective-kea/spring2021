@@ -3,6 +3,17 @@ Session 12 - Problem-Solving with python
 ========================================
 Today we will solve problems. The code you will use for doing this will primarely be through things you already know. 
 
+
+Agenda of today
+---------------
+
+* Exam and exam preperation weeks
+* Google job interview video (24:00)
+* Demo of Google job interview code in python
+* Exercises start
+        * Solve the Card Challange
+        * Do exercises
+
 Materials
 ---------
 `Solution  <exercises/solution/48_problem_solving/solutions.rst>`_
