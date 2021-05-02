@@ -26,7 +26,7 @@ Some weeks before the oral examination you should hand in a synopsis on wiseflow
 Oral exam:
 **********
 
-* 4 - 6 topics, where you pick a topic at the beginning of the examination.  
+* 4 topics, where you pick a topic at the beginning of the examination.  
 * Create a 10 minutes presentation and code examples for each topic.
 * After your presentation 15 minutes examination within this topic and other related topics.
 

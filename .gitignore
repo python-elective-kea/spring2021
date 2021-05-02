@@ -48,8 +48,8 @@ Dockerfile
 #/docs/exercises/solution/10_context_managers/*
 
 # 48 Problem Solving
-/sphinx/build/html/exercises/solution/48_problem_solving/*
-/docs/exercises/solution/48_problem_solving/*
+#/sphinx/build/html/exercises/solution/48_problem_solving/*
+#/docs/exercises/solution/48_problem_solving/*
 
 # 49 tips & tricks
 /sphinx/build/html/exercises/solution/49_tips&tricks/*
