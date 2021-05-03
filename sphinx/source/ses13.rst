@@ -4,11 +4,7 @@ Session 13 - The NumPy Library
 
 Learning Goals
 --------------
-
-
-
-
-
+To get a first impression and familialize your self with the Tools used in Data Science & Machine Learning.
 
 Materials
 ---------
@@ -20,4 +16,4 @@ Materials
 
 Exercises
 ---------
-
+* `Toolboxes for Data Scientists <_static/978-3-319-50017-1.pdf>`_
